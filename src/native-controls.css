@@ -1,0 +1,26 @@
+.native-exit {
+  color: var(--color-text-default);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: min(360px, calc(100% - 32px));
+  word-break: keep-all;
+}
+
+.native-exit::backdrop { background: var(--dim); }
+.native-exit h2 { margin: 0; font-size: 22px; }
+.native-exit p { margin: 12px 0; font-size: 15px; }
+.native-exit-actions { display: flex; gap: 8px; }
+.native-exit-actions button {
+  flex: 1;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-selected);
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+}

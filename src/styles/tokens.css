@@ -1,0 +1,123 @@
+/** FLFC의 밝은 화면과 어두운 화면을 참고한 이 앱의 색상 토큰. */
+
+:root {
+  --color-text-strong: #111827;
+  --color-text-default: #1e3a8a;
+  --color-text-subtle: #1e40af;
+  --color-text-hint: #1d4ed8;
+  --color-text-disabled: #6b7280;
+  --color-text-inverse: #ffffff;
+
+  --color-bg: #ffffff;
+  --color-bg-canvas: #f5f7fb;
+  --surface: #f8fafc;
+  --surface-raised: #eef2f7;
+  --surface-selected: #eff6ff;
+  --border: #cbd5e1;
+
+  --color-danger: #b42336;
+  --color-success: #16794b;
+  --color-warning: #a65b00;
+
+  --brand-primary: #1d4ed8;
+  --brand-primary-hover: #1e40af;
+  --on-primary: #ffffff;
+  --accent-line: #1d4ed8;
+  --pitch-stripe-1: #126747;
+  --pitch-stripe-2: #0d5b3f;
+  --pitch-chip: #064637;
+  --pitch-chip-border: #2b8268;
+  --pitch-line: #ffffff;
+  --decorative-line: #1d4ed84d;
+  --shadow-color: #2135472e;
+  --accent-mint: #087568;
+  --accent-mint-soft: #e7f6f0;
+  --accent-mint-border: #b6e2d3;
+  --accent-gold: #945708;
+  --accent-gold-soft: #fff4d9;
+  --accent-gold-border: #ecd39a;
+  --accent-violet: #6844b5;
+  --accent-violet-soft: #f1ecff;
+  --accent-violet-border: #d8ccf4;
+  --accent-coral: #b4424e;
+  --accent-coral-soft: #fff0ed;
+  --accent-coral-border: #efc6c6;
+  --on-accent: #ffffff;
+  --hero-start: #173ca0;
+  --hero-end: #102754;
+  --hero-text: #ffffff;
+  --hero-subtle: #dce8ff;
+  --hero-line: #91b4ff33;
+  --card-shadow: 0 8px 26px #244b8b0a;
+
+  /* 타이포 스케일 — 크기는 이 6단계 안에서만 고른다. weight는 400~700만 쓴다. */
+  --font-size-display: clamp(32px, 9vw, 42px);
+  --font-weight-display: 700;
+  --font-size-title: 20px; /* Title */
+  --font-weight-title: 700;
+  --font-size-subtitle: 15px; /* Subtitle·부제 */
+  --font-weight-subtitle: 600;
+  --font-size-body: 17px; /* Body·본문 */
+  --font-weight-body: 400;
+  --font-size-body-small: 15px; /* Body-small·보조 */
+  --font-weight-body-small: 400;
+  --font-size-caption: 13px; /* Caption·메타(메타데이터·보조 라벨 전용) */
+  --font-weight-caption: 400;
+
+  /* 간격 스케일 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --dim: rgba(0, 0, 0, 0.4);
+}
+
+:root[data-theme='dark'] {
+  --color-text-strong: #f9fafb;
+  --color-text-default: #e5e7eb;
+  --color-text-subtle: #b7becb;
+  --color-text-hint: #a5adba;
+  --color-text-disabled: #9ca3af;
+  --color-bg: #242424;
+  --color-bg-canvas: #1b1b1b;
+  --surface: #30343b;
+  --surface-raised: #3b4049;
+  --surface-selected: #48402a;
+  --border: #586170;
+  --color-danger: #ffa4ad;
+  --color-success: #51d69c;
+  --color-warning: #ffbf69;
+  --brand-primary: #facc15;
+  --brand-primary-hover: #ffe066;
+  --on-primary: #242424;
+  --accent-line: #60a5fa;
+  --pitch-stripe-1: #064937;
+  --pitch-stripe-2: #084332;
+  --pitch-chip: #003b2e;
+  --pitch-chip-border: #125b49;
+  --pitch-line: #f9fafb;
+  --decorative-line: #60a5fa66;
+  --shadow-color: #090b0dcc;
+  --accent-mint: #6ee0bd;
+  --accent-mint-soft: #173d36;
+  --accent-mint-border: #2f6855;
+  --accent-gold: #ffd77d;
+  --accent-gold-soft: #3d3421;
+  --accent-gold-border: #73603b;
+  --accent-violet: #c2a5ff;
+  --accent-violet-soft: #332744;
+  --accent-violet-border: #64507e;
+  --accent-coral: #ffb1b5;
+  --accent-coral-soft: #442b32;
+  --accent-coral-border: #7a4650;
+  --on-accent: #172032;
+  --hero-start: #243b72;
+  --hero-end: #19243e;
+  --hero-text: #f5f8ff;
+  --hero-subtle: #d0ddf8;
+  --hero-line: #adc7ff26;
+  --card-shadow: 0 8px 26px #080d1726;
+}

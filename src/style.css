@@ -1,0 +1,43 @@
+/* Baseball screens use Copero's layout, tokens and controls. */
+.baseball-dialog {
+  width: min(420px, calc(100% - 32px));
+  max-width: none;
+  padding: 0;
+  background: transparent;
+  color: var(--color-text-default);
+  border: 0;
+  border-radius: 20px;
+}
+
+.baseball-dialog::backdrop { background: var(--dim); }
+.baseball-dialog > .card { padding: var(--space-5); }
+.baseball-dialog .cta-dock { position: static; padding: 0; }
+.text-input { font-size: max(16px, var(--font-size-body-small)); }
+.mode-card p { font-size: var(--font-size-body-small); }
+.baseball-profile-options .segment { font-size: var(--font-size-body-small); }
+.baseball-bat-side { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.baseball-position-field {
+  height: auto;
+  aspect-ratio: 1;
+  min-height: 270px;
+}
+
+.baseball-timeline .timeline-table-head,
+.baseball-timeline .timeline-row {
+  grid-template-columns: 42px minmax(0, 1fr) 36px 35px 34px 42px;
+}
+
+.baseball-timeline .age-pill { font-size: 12px; }
+.baseball-league-catalog summary { min-height: 44px; cursor: pointer; list-style: none; }
+.baseball-league-catalog summary::-webkit-details-marker { display: none; }
+.baseball-league-catalog[open] > div { margin-top: var(--space-3); }
+.baseball-summary { width: min(440px, calc(100% - 32px)); color: var(--color-text-default); }
+.baseball-summary::backdrop { background: var(--dim); }
+
+@media (max-width: 375px) {
+  .app-content {
+    padding-inline: max(12px, env(safe-area-inset-left, 0px), var(--sdk-safe-left, 0px))
+      max(12px, env(safe-area-inset-right, 0px), var(--sdk-safe-right, 0px));
+  }
+}
